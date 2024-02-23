@@ -1,3 +1,20 @@
+
+
+### Remove  props.onIncrease();
+
+### React Redux
+
+doc link :(https://react-redux.js.org/)
+
+An Existing React App
+
+```bash
+npm install redux react-redux
+```
+
+-  an action called plus is delivered.
+
+```js
 import React,{useState} from 'react';
 import './style.css';
 import {createStore} from "redux";
@@ -42,7 +59,6 @@ export default function App (){
  }
 
  function Left2(props){
-  console.log("2")
   return(
     <div>
       <h1>Left2 :  </h1>
@@ -53,7 +69,6 @@ export default function App (){
 
 
  function Left3(props){
-  console.log("3");
   const number = useSelector((state)=>state.number);
   return(
     <div>
@@ -101,3 +116,4 @@ export default function App (){
 
 
  
+```
